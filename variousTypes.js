@@ -31,6 +31,6 @@ console.log("res13 =", res13, "res14 =", res14, "res15 =", res15)
 
 
 let res16 = Boolean(str1) / bool1;
-let res17 = num1 / Boolean(str1);
+let res17 = Boolean(str1)/ num1 ;
 let res18 = num1 / Number(bool1);
 console.log("res16 =", res16, "res17 =", res17, "res18 =", res18)
