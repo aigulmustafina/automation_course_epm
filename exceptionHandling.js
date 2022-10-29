@@ -1,19 +1,19 @@
 // task1
 try {
-    console.log(a)
-    let a = 3
+    console.log(a);
+    let a = 3;
 } catch(ReferenceError) {
-    console.log('let must be declared')
+    console.log('let must be declared');
 }
 
 // task2
 
 try {
-    let result = 1/0
+    let result = 1/0;
     if (!isFinite(result)) {
-        throw DivisionByZeroError
+        throw DivisionByZeroError;
     }
 }
 catch (DivisionByZeroError) {
-    console.log('cannot be divided by zero')
+    console.log('cannot be divided by zero');
 }
