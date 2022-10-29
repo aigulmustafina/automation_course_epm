@@ -7,10 +7,13 @@ try {
 }
 
 // task2
-let result = 1 / 0
-if (!isFinite(result)) {
-    throw new Error('cannot be divided by zero')
-} else {
-    console.log(result)
+
+try {
+    let result = 1/0
+    if (!isFinite(result)) {
+        throw DivisionByZeroError
+    }
 }
-    
+catch (DivisionByZeroError) {
+    console.log('cannot be divided by zero')
+}
